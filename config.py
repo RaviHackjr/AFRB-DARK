@@ -4,16 +4,16 @@ id_pattern = re.compile(r'^.\d+$')
 
 
 class Config(object):
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "22817133")
+    API_HASH  = os.environ.get("API_HASH", "65b44989de9accc59c64691b308da0f7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7970885214:AAGnI8WyD8Qu8t6p3ZRsxCsqgUJcrBP0rs0") 
 
-    DB_NAME = os.environ.get("DB_NAME","Rename")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","AutoRenamerBot2")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://nitinkumardhundhara:DARKXSIDE78@cluster0.wdive.mongodb.net/?retryWrites=true&w=majority")
     PORT = os.environ.get("PORT", "8080")
  
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://iili.io/3KDcyZB.md.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://i.postimg.cc/xC5CxZFH/imgs.png")
     START_STICKER   = "CAACAgUAAyEFAASONkiwAAIobmghgWh1PzfN_0CMpqZNDsZoiOMWAAJpEAACa-SZVs35WyqGBDw7NgQ"
     FORCE_PIC   = os.environ.get("FORCE_PIC", "https://www.wallpaperflare.com/static/591/238/424/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-rinnegan-wallpaper.jpg")
     ADMINS       = [int(admins) if id_pattern.search(admins) else admins for admins in os.environ.get('ADMINS', '6302971969 7086472788 6039119180 1136967391').split()]
@@ -30,8 +30,8 @@ class Config(object):
     BOT_NAME = os.environ.get("BOT_NAME", "𝗔𝘂𝘁𝗼 𝗥𝗲𝗻𝗮𝗺𝗲𝗿 [𝗕𝗼𝘁𝘀 𝗡𝗮𝘁𝗶𝗼𝗻]")
     OWNER_NAME = os.environ.get("OWNER_NAME", " 𝗘𝗥𝗔 『𝗗𝗔𝗥𝗞𝗫𝗦𝗜𝗗𝗘』 ♪")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "DARKXSIDE78")
-    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "FraxxShadow")
-    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "FraxxShadow")
+    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "Blakite_Ravii")
+    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "Blakite_Ravii")
     TOKEN_API = ""
     SHORTENER_URL = "https://droplink.co/api"
     PREMIUM_USERS_PER_PAGE = 15
