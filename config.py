@@ -26,12 +26,12 @@ class Config(object):
     BOT_CHANNEL_USERNAME = os.environ.get("BOT_CHANNEL_USERNAME", "Bots_Nation")
     SUPPORT_CHANNEL_NAME = os.environ.get("SUPPORT_CHANNEL_NAME", "ʙᴏᴛs ɴᴀᴛɪᴏɴ sᴜᴘᴘᴏʀᴛ")
     SUPPORT_CHANNEL_USERNAME = os.environ.get("SUPPORT_CHANNEL_USERNAME", "Bots_Nation_Support")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "ZeroWaifuBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "NovaAutorenameBot")
     BOT_NAME = os.environ.get("BOT_NAME", "𝗔𝘂𝘁𝗼 𝗥𝗲𝗻𝗮𝗺𝗲𝗿 [𝗕𝗼𝘁𝘀 𝗡𝗮𝘁𝗶𝗼𝗻]")
-    OWNER_NAME = os.environ.get("OWNER_NAME", " 𝗘𝗥𝗔 『𝗗𝗔𝗥𝗞𝗫𝗦𝗜𝗗𝗘』 ♪")
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "DARKXSIDE78")
-    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "Blakite_Ravii")
-    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "Blakite_Ravii")
+    OWNER_NAME = os.environ.get("OWNER_NAME", "Jas Mehra")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Jas_Mehra")
+    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "Jas_Mehra")
+    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "Jas_Mehra")
     TOKEN_API = ""
     SHORTENER_URL = "https://droplink.co/api"
     PREMIUM_USERS_PER_PAGE = 15
@@ -77,7 +77,7 @@ class Txt(object):
 ➲ ᴄʜᴀᴘᴛᴇʀ - ᴛᴏ ʀᴇᴘʟᴀᴄᴇ ᴄʜᴀᴘᴛᴇʀ
 
 <b>‣ ᴇxᴀᴍᴘʟᴇ :</b>  
-<code>/autorename [Sseason-episode] One Piece [quality] [audio] @GenAnimeOfc</code>
+<code>/autorename [Sseason-episode] One Piece [quality] [audio] @NineAnimeOfficial</code>
 
 <b>‣ /autorename:</b>  
 ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ ʙʏ ᴜꜱɪɴɢ 'ᴇᴘɪꜱᴏᴅᴇ', 'sᴇᴀsᴏɴ', 'ᴀᴜᴅɪᴏ', 'ʀᴇsᴏʟᴜᴛɪᴏɴ' ᴀɴᴅ 'ǫᴜᴀʟɪᴛʏ' ᴠᴀʀɪᴀʙʟᴇꜱ ɪɴ ʏᴏᴜʀ ꜰᴏʀᴍᴀᴛ ᴛᴇxᴛ.  
