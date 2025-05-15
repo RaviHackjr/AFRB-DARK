@@ -1,26 +1,31 @@
 # Use Python 3.12 slim as the base image
 FROM python:3.12-slim
 
-# Install system dependencies, including ffmpeg
+# Set environment variables to reduce Python's memory footprint
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install system dependencies including ffmpeg
 RUN apt update && apt install -y \
     ffmpeg \
     build-essential \
     libssl-dev \
     libffi-dev \
     python3-dev \
-    && rm -rf /var/lib/apt/lists/*  # Clean up to reduce image size
+    git \
+    && apt clean && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy your application code to the container
-COPY . /app/
+# Copy application code
+COPY . .
 
-# Upgrade pip to the latest version
-RUN pip install --upgrade pip
+# Upgrade pip
+RUN pip install --no-cache-dir --upgrade pip
 
-# Install Python dependencies from requirements.txt
-RUN pip install -r requirements.txt
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Define the command to run your bot
+# Define the default command
 CMD ["python", "bot.py"]
