@@ -20,7 +20,7 @@ class Config(object):
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6302971969 7086472788 6039119180 1136967391').split()]
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '@Anime_x_Nova').split(', ')
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "@teteetetsss")
-    DUMP_CHANNEL = os.environ.get("DUMP_CHANNEL", "@teteetetsss")
+    DUMP_CHANNEL = os.environ.get("DUMP_CHANNEL", "-1002277917960")
     DUMP = True
     BOT_CHANNEL_NAME = os.environ.get("BOT_CHANNEL_NAME", "ʙᴏᴛs ɴᴀᴛɪᴏɴ")
     BOT_CHANNEL_USERNAME = os.environ.get("BOT_CHANNEL_USERNAME", "Bots_Nation")
