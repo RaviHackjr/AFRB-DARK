@@ -6,19 +6,19 @@ id_pattern = re.compile(r'^.\d+$')
 class Config(object):
     API_ID    = os.environ.get("API_ID", "22817133")
     API_HASH  = os.environ.get("API_HASH", "65b44989de9accc59c64691b308da0f7")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7970885214:AAGnI8WyD8Qu8t6p3ZRsxCsqgUJcrBP0rs0") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7318140215:AAE5HzGZhYprGJqc9UhcI4ADxwWthqbaF0o") 
 
-    DB_NAME = os.environ.get("DB_NAME","AutoRenamerBot2")     
+    DB_NAME = os.environ.get("DB_NAME","AutoRenamerBot3")     
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://nitinkumardhundhara:DARKXSIDE78@cluster0.wdive.mongodb.net/?retryWrites=true&w=majority")
     PORT = os.environ.get("PORT", "8080")
  
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://i.postimg.cc/xC5CxZFH/imgs.png")
+    START_PIC   = os.environ.get("START_PIC", "https://iili.io/3KDcyZB.md.jpg")
     START_STICKER   = "CAACAgUAAyEFAASONkiwAAIobmghgWh1PzfN_0CMpqZNDsZoiOMWAAJpEAACa-SZVs35WyqGBDw7NgQ"
-    FORCE_PIC   = os.environ.get("FORCE_PIC", "https://www.wallpaperflare.com/static/591/238/424/naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-rinnegan-wallpaper.jpg")
+    FORCE_PIC   = os.environ.get("FORCE_PIC", "https://images.alphacoders.com/133/thumb-1920-1335196.png")
     ADMINS       = [int(admins) if id_pattern.search(admins) else admins for admins in os.environ.get('ADMINS', '6302971969 7086472788 6039119180 1136967391').split()]
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6302971969 7086472788 6039119180 1136967391').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '@Anime_x_Nova').split(', ')
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '@NineAnimeOfficial').split(', ')
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "@teteetetsss")
     DUMP_CHANNEL = os.environ.get("DUMP_CHANNEL", "-1002277917960")
     DUMP = True
@@ -26,12 +26,12 @@ class Config(object):
     BOT_CHANNEL_USERNAME = os.environ.get("BOT_CHANNEL_USERNAME", "Bots_Nation")
     SUPPORT_CHANNEL_NAME = os.environ.get("SUPPORT_CHANNEL_NAME", "ʙᴏᴛs ɴᴀᴛɪᴏɴ sᴜᴘᴘᴏʀᴛ")
     SUPPORT_CHANNEL_USERNAME = os.environ.get("SUPPORT_CHANNEL_USERNAME", "Bots_Nation_Support")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "NovaAutorenameBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "AutoRenamerXRavi_Bot")
     BOT_NAME = os.environ.get("BOT_NAME", "𝗔𝘂𝘁𝗼 𝗥𝗲𝗻𝗮𝗺𝗲𝗿 [𝗕𝗼𝘁𝘀 𝗡𝗮𝘁𝗶𝗼𝗻]")
-    OWNER_NAME = os.environ.get("OWNER_NAME", "Jas Mehra")
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Jas_Mehra")
-    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "Jas_Mehra")
-    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "Jas_Mehra")
+    OWNER_NAME = os.environ.get("OWNER_NAME", "Blakite_Ravii")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Blakite_Ravii")
+    DEVELOPER_USERNAME = os.environ.get("DEVELOPER_USERNAME", "Blakite_Ravii")
+    DEVELOPER_NAME = os.environ.get("DEVELOPER_NAME", "Blakite_Ravii")
     TOKEN_API = ""
     SHORTENER_URL = "https://droplink.co/api"
     PREMIUM_USERS_PER_PAGE = 15
