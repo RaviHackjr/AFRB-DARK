@@ -1,4 +1,3 @@
-
 import aiohttp, asyncio, warnings, pytz
 from datetime import datetime, timedelta
 from pytz import timezone
@@ -11,6 +10,7 @@ import pyrogram.utils
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 import time
+
 pyrogram.utils.MIN_CHANNEL_ID = -1002258136705
 
 class Bot(Client):
@@ -33,10 +33,12 @@ class Bot(Client):
         self.mention = me.mention
         self.username = me.username  
         self.uptime = Config.BOT_UPTIME  
+
         if Config.WEBHOOK:
             app = web.AppRunner(await web_server())
             await app.setup()       
             await web.TCPSite(app, "0.0.0.0", Config.WEBHOOK_PORT).start()     
+
         print(f"{me.first_name} Is Started.....✨️")
 
         uptime_seconds = int(time.time() - self.start_time)
@@ -65,4 +67,14 @@ class Bot(Client):
             except Exception as e:
                 print(f"Failed to send message in chat {chat_id}: {e}")
 
-Bot().run()
+    async def main(self):
+        await self.start()
+        from pyrogram import idle
+        await idle()
+        await self.stop()
+
+    def run(self):
+        asyncio.run(self.main())
+
+if __name__ == "__main__":
+    Bot().run()
