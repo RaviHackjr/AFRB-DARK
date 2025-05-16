@@ -8,7 +8,7 @@ class Config(object):
     API_HASH  = os.environ.get("API_HASH", "65b44989de9accc59c64691b308da0f7")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7318140215:AAE5HzGZhYprGJqc9UhcI4ADxwWthqbaF0o") 
 
-    DB_NAME = os.environ.get("DB_NAME","AutoRenamerBot3")     
+    DB_NAME = os.environ.get("DB_NAME","AFRB-Ravii")     
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://nitinkumardhundhara:DARKXSIDE78@cluster0.wdive.mongodb.net/?retryWrites=true&w=majority")
     PORT = os.environ.get("PORT", "8080")
  
